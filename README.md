@@ -9,8 +9,8 @@ This repository contains a collection of SQL queries showcasing my skills with t
 - Demonstrate proficiency in querying databases and extracting meaningful information.
 
 ## Databases
-- **AdventureWorks Database:** [Link to Database (https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2012.bak)]
-- **Northwind Database:** [Link to Database (https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs)]
+- **AdventureWorks Database:** [https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2012.bak]
+- **Northwind Database:** [https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs]
 
 ## Queries
 - **Northwind Queries:**
