@@ -20,28 +20,28 @@ This repository contains a collection of SQL queries showcasing my skills with t
    - Displaying all data from `DimCustomer`.
    - Extracting specific customer details like first name, birth date, marital status, and gender.
 
-3. **Conditional Filtering:**
+2. **Conditional Filtering:**
    e.g.
    - Identifying customers with a yearly income over $60,000.
    - Retrieving customers with a specific number of children or within a particular marital status.
 
-5. **Advanced Filtering:**
+3. **Advanced Filtering:**
    e.g.
    - Extracting subsets of customers based on multiple conditions, such as marital status, gender, and birthdate.
 
-7. **Join Operations:**
+4. **Join Operations:**
    - Utilizing joins to retrieve information from related `Fact` and `Dim` tables
 
-8. **Aggregation:**
+5. **Aggregation:**
    - Calculating aggregate values, such as the total sales and average sales, and counting employees in various departments.
 
-9. **Common Table Expressions (CTEs):**
+6. **Common Table Expressions (CTEs):**
    - Employing CTEs for tasks like ranking products and finding employees with the highest and lowest sales.
 
-10. **Window Functions:**
+7. **Window Functions:**
    - Using window functions for ranking and partitioning data, e.g., finding top-selling products and sales territory-wise analyses.
 
-11. **Subqueries:**
+8. **Subqueries:**
    - Incorporating subqueries to filter and retrieve data based on conditions.
   
 
