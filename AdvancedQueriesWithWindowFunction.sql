@@ -39,7 +39,7 @@ FROM CustomerList CL
 WHERE CL.rn = 2 
 -----------------------------------------------------------------------------------------------------
 
---Create a empluyees table
+--Create an employee table
 
 create table employees
 ( emp_id int primary key
@@ -211,7 +211,7 @@ insert into modified_students values
 (6, 'Oliver'),
 (7, 'Jacob');
 
--- interchange the adjacent student names.If there are no adjacent student then kepp the student name the same.
+-- 05 interchange the adjacent student names. If there are no adjacent students, then keep the student's name the same.
 
 SELECT id, student_name,
 CASE 
@@ -248,7 +248,7 @@ insert into weather values
 (16, 'Glasgow', -4, ('2021-01-08'));
 
 
----fetch all the records when London had extremely cold temperature for 3 consecutive days or more
+--- 06 fetch all the records when London had extremely cold temperatures for 3 consecutive days or more
 
 WITH FlaggedList AS (
  SELECT *,
@@ -275,49 +275,3 @@ WITH FlaggedList AS (
 SELECT id, city, temperature, day
 FROM FlaggedList 
 where flag = 'Y'
-
-
-
-
-
-
-
-create table employee
-( emp_ID int primary key
-, emp_NAME varchar(50) not null
-, department varchar(50)
-, monthly_salary int)
-
-insert into employee values(101, 'John', 'Administration', 4000);
-insert into employee values(102, 'Alice', 'Human Resources', 3000);
-insert into employee values(103, 'Emily', 'Information Technology', 4000);
-insert into employee values(104, 'David', 'Finance', 6500);
-insert into employee values(105, 'Michael', 'Human Resources', 3000);
-insert into employee values(106, 'Emma',  'Finance', 5000);
-insert into employee values(107, 'Sophia', 'Human Resources', 7000);
-insert into employee values(108, 'Daniel', 'Administration', 4000);
-insert into employee values(109, 'Olivia', 'Information Technology', 6500);
-insert into employee values(110, 'William', 'Information Technology', 7000);
-insert into employee values(111, 'Isabella', 'Information Technology', 8000);
-insert into employee values(112, 'James', 'Information Technology', 10000);
-insert into employee values(113, 'Mia', 'Administration', 2000);
-insert into employee values(114, 'Ethan', 'Human Resources', 3000);
-insert into employee values(115, 'Charlotte', 'Information Technology', 4500);
-insert into employee values(116, 'Alexander', 'Finance', 6500);
-insert into employee values(117, 'Ava', 'Human Resources', 3500);
-insert into employee values(118, 'Benjamin', 'Finance', 5500);
-insert into employee values(119, 'Amelia', 'Human Resources', 8000);
-insert into employee values(120, 'Lucas', 'Administration', 5000);
-insert into employee values(121, 'Harper', 'Information Technology', 6000);
-insert into employee values(122, 'Mason', 'Information Technology', 8000);
-insert into employee values(123, 'Evelyn', 'Information Technology', 8000);
-insert into employee values(124, 'Elijah', 'Information Technology', 11000);
-
-select * from employee;
-
-select emp_id, emp_name, dept_name, salary
-from (
-select *,
-row_number() over (order by emp_id desc) as rn
-from employee e) x
-where x.rn = 2;
