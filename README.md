@@ -1,48 +1,42 @@
-# SQL-Queries
-SQL queries for the Northwind and AdventureWorks databases
 # SQL Queries Portfolio
 
-This repository contains a collection of SQL queries showcasing my skills with the Northwind and AdventureWorks databases. 
+This repository contains a collection of SQL queries showcasing advanced skills in data analysis and manipulation using the AdventureWorks and Northwind databases, along with a sample database schema.
 
-## Overview
-- Explore a variety of SQL queries, including SELECT, JOIN, and GROUP BY operations.
-- Demonstrate proficiency in querying databases and extracting meaningful information.
 
 ## Databases
-- **AdventureWorks Database:** [https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2012.bak]
-- **Northwind Database:** [https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs]
+- **AdventureWorks Database:** https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2012.bak
+- **Northwind Database:** https://github.com/cjlee/northwind
 
 ## Queries
-- **AdventureWorks Queries:**
-- A total of 51 requirements with multiple ways to write queries encompassing the following
+- More than 140 requirements with multiple ways to write queries encompassing the following
+  
 1. **Basic Retrieval and Filtering:**
-   e.g
-   - Displaying all data from `DimCustomer`.
-   - Extracting specific customer details like first name, birth date, marital status, and gender.
+   - Extracting specific details like first name, birth date, marital status, and gender.
 
 2. **Conditional Filtering:**
-   e.g.
    - Identifying customers with a yearly income over $60,000.
    - Retrieving customers with a specific number of children or within a particular marital status.
 
 3. **Advanced Filtering:**
-   e.g.
-   - Extracting subsets of customers based on multiple conditions, such as marital status, gender, and birthdate.
+   - Extracting subsets based on multiple conditions.
 
-4. **Join Operations:**
-   - Utilizing joins to retrieve information from related `Fact` and `Dim` tables
+4. **Complex Joins:**
+   - Utilizing inner, left, and self joins to retrieve information from related tables.
 
 5. **Aggregation:**
-   - Calculating aggregate values, such as the total sales and average sales, and counting employees in various departments.
+   - Aggregation from single and multiple columns.
 
 6. **Common Table Expressions (CTEs):**
-   - Employing CTEs for tasks like ranking products and finding employees with the highest and lowest sales.
+   - Employing CTEs for complex tasks.
 
 7. **Window Functions:**
-   - Using window functions for ranking and partitioning data, e.g., finding top-selling products and sales territory-wise analyses.
-
+   - Using window functions to rank, partition data and access previous and next rows.
+     
 8. **Subqueries:**
    - Incorporating subqueries to filter and retrieve data based on conditions.
+  
+9. **Conditional Logic:**
+    - Use CASE statements for dynamic data transformations and customized result sets.
   
 
 
